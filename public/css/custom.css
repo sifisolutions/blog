@@ -1,0 +1,106 @@
+.card{
+    padding: 15px;
+}
+
+.btn_right{
+	align-self: flex-end;
+    padding: 20px;
+	
+}
+
+.dataTables_filter{
+	width: 94%;
+    float: left;
+    text-align: right;
+}
+.dataTables_paginate{
+	    width: 31%;
+    float: right;
+    text-align: right;
+}
+#working-form{
+	 padding: 15px;
+}
+
+/* radio button start */
+
+/* The container */
+.container-radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.container-radio .checkmark {
+	font-size: 18px;
+    text-align: center;
+    color: #fff;
+	
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 0%;
+}
+
+/* On mouse-over, add a grey background color */
+
+
+/* When the radio button is checked, add a blue background */
+.container-radio input:checked ~ .selected-green {
+    background-color: green;
+}
+
+
+.container-radio .selected-green {
+    background-color: green;
+}
+
+
+
+.container-radio .selected-red {
+    background-color: red;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.container-radio .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container-radio input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container-radio .checkmark:after {
+ left: 9px;
+    top: 4px;
+    width: 7px;
+    height: 16px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
