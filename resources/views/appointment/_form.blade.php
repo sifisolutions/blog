@@ -110,9 +110,12 @@ if(showTime(date))
     		success : function(response) {
 
     			if (response.status == 'OK') {
-    			
+    			var is_save =$('#is_save').val();
+    			if( is_save==1){
     				$('.append_html').html(response.html);
-
+    			}else{
+    				$('.append_html').html('');
+    			}
     				if(  $('input:radio[id^="check_"]:checked').attr('disabled')) {
     					 $('input:radio[id^="check_"]:checked').attr('disabled',false)
     				}
@@ -180,6 +183,7 @@ if(showTime(date))
     	 			}else {
     	 				$('#is_save').val(' ');
     	 				$("#time").empty();
+    	 				$('.append_html').html('');
     	 				$('.error_date').html(response.error);	
     	 			}
     	 		}
